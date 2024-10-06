@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SoftLearning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                color: #FF0000;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Update Book</h1>
+
+            <form action="../../SoftLearning/controllers/Book/UpdateBookController.php" method="POST">
+                
+                <br>
+                <label>Author </label>
+                <br>
+                <input  type="text" placeholder="Insert Author" name="Author"/>
+
+                <br><br>
+                <label>ISBN </label>
+                <br>
+                <input  type="number" min="1" max="9879999999999" placeholder="Ex: 0123456789" name="Isbn"/>
+                <br><br>
+                
+                <label>Cover </label><br>
+                <select name="Cover">
+                    <option selected="selected"  value="Soft" >Soft</option>
+                    <option value="Hard">Hard</option>
+                    <option value="SpoecialEdition">Special edition</option>
+                </select><br><br>
+                
+                <label>Page </label>
+                <br>
+                <input  type="number" min="1" max="10000" placeholder="Ex: 1000, or 2000, or ..." name="Page"/>
+                <br><br>
+                
+                <label>Genre </label><br>
+                <input  type="Text" placeholder="Ex: Drama,fantasy.. " name="Genre"/>
+                <br><br>
+                
+                <label>Editorial </label><br>
+                <input  type="Text" placeholder="Ex: Planeta, Anaya... " name="Editorial"/>
+                <br><br>
+                
+                <label>Date </label><br>
+                <input  type="date" placeholder="Ex: 02/03/1990" name="Date"/>
+                <br><br>
+                
+                
+                <label>Fragile </label><br>
+                <select name="Fragile">
+                    <option selected="selected"  value="false" >No</option>
+                    <option value="true">Yes</option>
+                </select><br><br>
+                
+                <label> Weight</label><br>
+                <input  type="number" step="0.01" min="1" max="100" placeholder="Ex: 1.20 Kg" name="Weight"/>
+                <br>
+                <label> Heigth</label><br>
+                <input  type="number" step="0.01" min="1" max="100" placeholder="Ex: 1.20 Kg" name="Heigth"/>
+                <br>
+                <label> Width</label><br>
+                <input  type="number" step="0.01" min="1" max="100" placeholder="Ex: 1.20 Kg" name="Width"/>
+                <br>
+                <label> Length</label><br>
+                <input  type="number" step="0.01" min="1" max="100" placeholder="Ex: 1.20 Kg" name="Length"/>
+                <br>
+                
+                <label>Title </label><br>
+                <input  type="Text" placeholder="Ex: Harry Potter " name="Ident"/>
+                <br><br>
+                
+                <label>Price </label><br>
+                <input  type="number" step="0.01" min="0" max="1000" placeholder="Ex: 17.90 " name="Price"/>
+                <br><br>
+                
+              
+                
+                <input type="submit" value="ACTUALIZAR" id="enviar"/>
+            </form>
+        </main>
+    </body>
+</html>

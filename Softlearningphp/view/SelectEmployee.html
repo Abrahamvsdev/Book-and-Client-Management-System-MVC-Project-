@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>Select Employee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                color: #ff9900;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>Selecciona Employee por DNI</h1>
+        <form action="../../SoftLearning/controllers/Employee/SelectEmployeeController.php" method="POST">
+        <br><br>
+                <br><br>
+                <label>DNI </label>
+                <br>
+                <input  type="text"  placeholder="Ex: 12345678X" name="Dni"/>
+                <br><br>                
+                <input type="submit" value="BUSCAR" id="enviar"/>
+            </form>
+    </body>
+</html>

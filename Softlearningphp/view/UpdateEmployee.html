@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SoftLearning - Employee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                color: #FF0000;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Update Employee</h1>
+
+            <form action="../../SoftLearning/controllers/Employee/UpdateEmployeeController.php" method="POST">
+                
+                <br>
+                <label>Name </label>
+                <br>
+                <input type="text" placeholder="Insert Name" name="Name"/>
+                <br><br>
+                
+                <label>Surname </label>
+                <br>
+                <input type="text" placeholder="Insert Surname" name="Surname"/>
+                <br><br>
+                
+                <label>Email </label>
+                <br>
+                <input type="email" placeholder="Insert Email" name="Email"/>
+                <br><br>
+                
+                <label>Address </label>
+                <br>
+                <input type="text" placeholder="Insert Address" name="Address"/>
+                <br><br>
+                
+                <label>DNI </label>
+                <br>
+                <input type="text" placeholder="Insert DNI" name="Dni"/>
+                <br><br>
+                
+                <label>Phone Number </label>
+                 <input type="text" placeholder="Insert Phone" name="Number"/>
+                <br>
+                <br><br>
+                
+                <label>Antiquity </label>
+                <br>
+                <input type="text" placeholder="Insert Antiquity" name="Antiquity"/>
+                <br><br>
+                
+                 <label>Contract Day </label><br>
+                <input  type="date" placeholder="Ex: 02/03/1990" name="Contractday"/>
+                <br><br>
+                
+                <label>IdEmployee </label>
+                <br>
+                <input type="text" placeholder="Ex: AAA_1111" name="Idemployee"/>
+                <br><br>
+                
+                <input type="submit" value="UPDATE" id="enviar"/>
+            </form>
+        </main>
+    </body>
+</html>

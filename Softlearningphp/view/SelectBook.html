@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>Select Book</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                color: #ff9900;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>Selecciona libro por ISBN</h1>
+        <form action="../../SoftLearning/controllers/Book/SelectBookController.php" method="POST">
+        <br><br>
+                <label>ISBN </label>
+                <br>
+                <input  type="number" min="1" max="9879999999999" placeholder="Ex: 0123456789" name="Isbn"/> 
+                <br><br> 
+                <input type="submit" value="BUSCAR" id="enviar"/>
+            </form>
+    </body>
+</html>
